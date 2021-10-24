@@ -22,7 +22,7 @@ module.exports = {
       
     .setColor(config.cor).setTimestamp()
     .setThumbnail(member.user.displayAvatarURL())
-    .setDescription(`<a:881178726547738635:899281208368857158>  <:coras:901061855991173180>  Seja bem-vindo(a) ao Socially  <:coras:901061855991173180>  <a:881178726547738635:899281208368857158> \n\n <:855532077524320366:899281277885222942>  fique à vontade para se registrar em <#898544844237078538>
+    .setDescription(`<a:881178726547738635:899281208368857158>  <:coras:901061855991173180>  Seja bem-vindo(a) ao Socially  <:coras:901061855991173180>  <a:881178726547738635:899281208368857158> \n\n <:855532077524320366:899281277885222942>  fique à vontade para se registrar em <#901830095000449045>
     <:855532077524320366:899281277885222942>  Caso queira ser da nossa staff basta clicar aqui <#898540031831072818>`)
     
     let canal = client.channels.cache.get(socially.welcome);
