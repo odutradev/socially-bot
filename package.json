@@ -1,0 +1,24 @@
+{
+  "name": "socially",
+  "version": "1.0.0",
+  "description": "Um bot para o servidor Socially.",
+  "main": "index.js",
+  "engines": {
+    "node":"16.x"
+  },
+  "scripts": {
+    "start":"node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DARKnx#6070",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^7.0.0",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "firebase": "^8.10.0",
+    "foguetecolors": "^1.1.6-beta",
+    "fs": "^0.0.1-security",
+    "parse-ms": "^2.1.0"
+  }
+}

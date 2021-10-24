@@ -1,0 +1,64 @@
+{
+
+"prefix":"s.",
+"owner":"567004154569162753",
+"red":"#FF0000",
+"green":"#00FF00",
+"cor":"#f80acd",
+
+"not":"<:e33:820823746297856020>",
+"yes":"<a:a13:820996215096213555>",
+
+"errorLogs":"none",
+"chatbot":"none",
+"ignore": "none",
+
+
+"badWors":["merda", "shit,", "porra", "poha", "damn", "fuck", "buceta", "rola", "pinto"],
+"equipe":[],
+"status":["Socially um servidor de minecraft", "Use S.HELP para obter ajuda", "Meu prefixo nesse servidor e S."],
+
+"firebase":{
+
+    "apiKey": "AIzaSyC7GTm8VBPR4E9fhPX-XVU1XAbvvxazcQ4",
+    "authDomain": "f4milybot.firebaseapp.com",
+    "databaseURL": "https://f4milybot-default-rtdb.firebaseio.com",
+    "projectId": "f4milybot",
+    "storageBucket": "f4milybot.appspot.com",
+    "messagingSenderId": "240259194099",
+    "appId": "1:240259194099:web:05b8facb6f2874bb53ab86",
+    "measurementId": "G-W0BQRDJ8CC"
+
+},
+
+"flags":{
+    "ADMINISTRATOR":"ADMINISTRADOR",
+    "CREATE_INSTANT_INVITE":"CRIAR CONVITE",
+    "KICK_MEMBERS":"EXPULSAR MEMBROS",
+    "BAN_MEMBERS":"BANIR MEMBROS",
+    "MANAGE_CHANNELS":"GERENCIAR CANAIS",
+    "MANAGE_GUILD":"GERENCIAR SERVIDOR",
+    "ADD_REACTION":"ADICIONAR REAÇÕES",
+    "VIEW_AUDIT_LOG":"VER REGISTRO DE AUDITORIA",
+    "PRIORITY_SPEAKER":"VOZ PRIORITARIA",
+    "STREAM":"TRASMITIR",
+    "SEND_MESSAGES":"ENVIAR MENSAGENS",
+    "SEND_TTS_MESSAGES":"ENVIAR MENSAGENS TTS",
+    "MANAGE_MESSAGES":"GERENCIAR MENSAGENS",
+    "EMBED_LINKS":"ENVIAR EMBEDS",
+    "ATTACH_FILES":"ENVIAR ARQUIVOS",
+    "READ_MESSAGE_HISTORY":"VER HISTORICO DE MENSAGENS",
+    "MENTION_EVERYONE":"MENCIONAR EVERYONE",
+    "USE_EXTERNAL_EMOJIS":"USAR EMOJIS EXTERNOS",
+    "CONNECT":"CONECTAR",
+    "SPEAK":"FALAR",
+    "MUTE_MEMBERS":"MUTAR MEMBROS",
+    "MOVE_MEMBERS":"MOVER MEMBROS",
+    "CHANGE_NICKNAME":"MUDAR APELIDO",
+    "MANAGE_NICKNAMES":"GERENCIAR APELIDOS",
+    "MANAGE_ROLES":"GERENCIAR CARGOS",
+    "MANAGE_WEBHOOKS":"GERENCIAR WEBHOOKS",
+    "MANAGE_EMOJIS":"GERENCIAR EMOJIS"
+    }
+
+}
