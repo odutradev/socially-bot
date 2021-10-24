@@ -287,7 +287,7 @@ message.channel.send({embeds: [ fim ]}).then(m => {
 user.send({embeds: [ fim ]}).catch(v => {})
 user.roles.remove(cargos['sem-registro'])
 
-
+//bug setinterval removido 
 setTimeout(() => {
     
     message.channel.bulkDelete(1, true).catch(v => {})

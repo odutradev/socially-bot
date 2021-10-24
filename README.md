@@ -6,4 +6,7 @@ SociallyBot é um bot privado para o servidor [socially](https://discord.gg/BTZf
 Entre em contato comigo pelo meu [servidor](https://discord.gg/EA2yAg5ZjQ)
 
 
+
+
+
 ```Copyright © 2021 DARKnx```
