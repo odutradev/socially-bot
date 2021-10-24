@@ -279,6 +279,7 @@ let fim = new Discord.MessageEmbed()
 .setColor(all.config.cor)
 .setAuthor("Sistema de Registro:", client.user.displayAvatarURL())
 .setDescription(`Cargos setados no usuario com sucesso!`)
+.addField("Registrador", `${message.author.tag}`)
 .addField("Cargos", `${cache.map(ch => message.guild.roles.cache.get(ch).name).join('\n')}`)
 
 msg.delete()
