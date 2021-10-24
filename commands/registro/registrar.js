@@ -273,12 +273,13 @@ switch (select) {
     break;
 }
 
+//`<@&${ch}>`
 
 let fim = new Discord.MessageEmbed()
 .setColor(all.config.cor)
 .setAuthor("Sistema de Registro:", client.user.displayAvatarURL())
 .setDescription(`Cargos setados no usuario com sucesso!`)
-.addField("Cargos", `${cache.map(ch => `<@&${ch}>`).join('\n')}`)
+.addField("Cargos", `${cache.map(ch => message.guild.roles.cache(ch).name).join('\n')}`)
 
 msg.delete()
 message.channel.send({embeds: [ fim ]}).then(m => {
