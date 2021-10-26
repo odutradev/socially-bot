@@ -22,7 +22,7 @@ var startTime = Date.now();
 //iniciating firebase database
 try {
 
-
+if (config.database != "none"){
 console.log(colors.blue('Iniciating connection to firebase database'));
 
 //declaring start to database
@@ -41,7 +41,7 @@ firebase = firebase.database();
 databaseTime = ((Date.now() - databaseTime) /60).toFixed(5);
 
 console.log(colors.blue(`Database connection made with `) + colors.cyan(`${databaseTime}s.`))
-
+}
 } catch (e){
 
 console.log(colors.pink('Had an error in the database conection: '), colors.red(e))

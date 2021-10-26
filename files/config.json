@@ -12,7 +12,7 @@
 "errorLogs":"none",
 "chatbot":"none",
 "ignore": "none",
-
+"database":"none",
 
 "badWors":["merda", "shit,", "porra", "poha", "damn", "fuck", "buceta", "rola", "pinto"],
 "equipe":[],
@@ -20,14 +20,14 @@
 
 "firebase":{
 
-    "apiKey": "AIzaSyC7GTm8VBPR4E9fhPX-XVU1XAbvvxazcQ4",
-    "authDomain": "f4milybot.firebaseapp.com",
-    "databaseURL": "https://f4milybot-default-rtdb.firebaseio.com",
-    "projectId": "f4milybot",
-    "storageBucket": "f4milybot.appspot.com",
-    "messagingSenderId": "240259194099",
-    "appId": "1:240259194099:web:05b8facb6f2874bb53ab86",
-    "measurementId": "G-W0BQRDJ8CC"
+    "apiKey": "",
+    "authDomain": "",
+    "databaseURL": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": "",
+    "appId": "",
+    "measurementId": ""
 
 },
 
