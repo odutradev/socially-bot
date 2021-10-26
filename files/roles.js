@@ -33,11 +33,14 @@ client.channels.cache.get(config.errorLogs).send({embeds: [embed]});
 
 async function traslate(message, array ){
 
+if (config.database != 'none'){
+
 //pulling firebase datbase
 const db = require('firebase').database();
 
 //pulling language from server 
 var language = await db.ref(`servidores/${message.guild.id}/configurações/language`).once('value').then(v => v.val());
+}   else {let language = null}
 
 //return array
 if (!language) return array;
@@ -59,12 +62,15 @@ return array
 
 async function co(message, valor, s){
 
-//pulling firebase datbase
-const db = require('firebase').database();
+    if (config.database != 'none'){
 
-//pulling language from server 
-var language = await db.ref(`servidores/${message.guild.id}/configurações/language`).once('value').then(v => v.val());
-
+        //pulling firebase datbase
+        const db = require('firebase').database();
+        
+        //pulling language from server 
+        var language = await db.ref(`servidores/${message.guild.id}/configurações/language`).once('value').then(v => v.val());
+        } else {let language = null}
+     
 //declaring embed colors and emojis
 var cor = config.red;
 var emoji = config.not;
@@ -92,6 +98,7 @@ async function blackList(message){
 
 if (message.author.id == config.owner && config.ignore == "true" ) return false
 
+if (config.database == 'none') return;
 //pulling firebase database
 const db = require('firebase').database();
 

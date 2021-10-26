@@ -23,25 +23,26 @@ module.exports = {
     name: 'messageCreate',
     run: async (message, client) => {
 
-
+var prefix;
 
 //declaring general variable
 var info = ['fetch', 'translate', 'colors', 'ms', 'fs', 'config', 'roles']
-var all = [ fetch, translate, colors,  ms, fs, config, roles,  info ]
+var all = { fetch, translate, colors,  ms, fs, config, roles,  info }
 
-if (config.database == 'none'){
+if (config.database != 'none'){
 
-
+db = db.database()
 info.push('db');
-all.push(db.database());
-
-}
+all = {...all, db}
 
 //pulling prefix from database
 let prefix = await db.ref(`servidores/${message.guild.id}/configurações/prefix`).once('value').then(v => v.val()) || config.prefix;
 
 info.push('prefix');
-all.push(prefix);
+all = { ...all, prefix}
+
+} else prefix = config.prefix;
+
 
 //creating ignore config 
 let ignore = false;
@@ -49,7 +50,7 @@ let ignore = false;
 if (config.ignore == "true" && config.owner == message.author.id ) ignore = true;
  
 //pulling mentioned message
-let mentionedMessage = await db.ref(`client/configurações/mentionedMessage`).once('value').then(v => v.val()) || `Meu prefixo nesse servidor e \`${prefix}\`, Use \`${prefix}Help\` para obter ajuda.`; 
+let mentionedMessage =  `Meu prefixo nesse servidor e \`${prefix}\`, Use \`${prefix}Help\` para obter ajuda.`; 
 
 //checking if there is a message after the mention
 if (config.chatbot == 'on' && message.content.trim().split(/ +/g)[1]) return chatBot(message, all);

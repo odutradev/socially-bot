@@ -9,7 +9,8 @@ const config = require('./config.json')
 const roles = require('./roles.js')
 //pulling random status bot 
 const { status } = require('./status.js')
-
+//requiring firebase database
+const firebase = require('firebase')
 
 
 //creating start function
@@ -28,8 +29,7 @@ console.log(colors.blue('Iniciating connection to firebase database'));
 //declaring start to database
 var databaseTime = Date.now();
 
-//requiring firebase library
-var firebase = require('firebase');
+
 
 //iniciating firebase app
 firebase.initializeApp(config.firebase);
@@ -41,7 +41,7 @@ firebase = firebase.database();
 databaseTime = ((Date.now() - databaseTime) /60).toFixed(5);
 
 console.log(colors.blue(`Database connection made with `) + colors.cyan(`${databaseTime}s.`))
-}
+} 
 } catch (e){
 
 console.log(colors.pink('Had an error in the database conection: '), colors.red(e))
