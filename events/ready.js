@@ -11,7 +11,7 @@ module.exports = {
 
 console.log('Bot online com sucesso !')
 
-
+//is ready ?
 
 
 	}}
