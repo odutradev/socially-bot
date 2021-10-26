@@ -1,7 +1,7 @@
 //requiring discord library
 const Discord = require('discord.js');
 //requiring firebase database
-const db = require('firebase').database();
+const db = require('firebase')
 //requiring console color library
 const { colors } = require('foguetecolors');
 //requiring management time 
@@ -23,13 +23,25 @@ module.exports = {
     name: 'messageCreate',
     run: async (message, client) => {
 
-//pulling prefix from database
-let prefix = await db.ref(`servidores/${message.guild.id}/configurações/prefix`).once('value').then(v => v.val()) || config.prefix;
 
 
 //declaring general variable
-var info = ['fetch', 'translate', 'colors', 'db', 'ms', 'fs', 'config', 'roles', 'prefix']
-var all = { fetch, translate, colors, db, ms, fs, config, roles, prefix, info }
+var info = ['fetch', 'translate', 'colors', 'ms', 'fs', 'config', 'roles']
+var all = [ fetch, translate, colors,  ms, fs, config, roles,  info ]
+
+if (config.database == 'none'){
+
+
+info.push('db');
+all.push(db.database());
+
+}
+
+//pulling prefix from database
+let prefix = await db.ref(`servidores/${message.guild.id}/configurações/prefix`).once('value').then(v => v.val()) || config.prefix;
+
+info.push('prefix');
+all.push(prefix);
 
 //creating ignore config 
 let ignore = false;
